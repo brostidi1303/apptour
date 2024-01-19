@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c7e5f0"
+    tools:context=".Fragment.HomeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/block1"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/top_background" />
+
+        <TextView
+            android:id="@+id/txt_begin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="70dp"
+            android:text="Find Your"
+            android:textColor="@color/white"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txt_begin2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="120dp"
+            android:text="Dream Trip"
+            android:textColor="@color/black"
+            android:textSize="40sp"
+            app:layout_constraintEnd_toEndOf="@+id/txt_begin"
+            app:layout_constraintHorizontal_bias="0.561"
+            app:layout_constraintStart_toStartOf="@+id/txt_begin"
+            app:layout_constraintTop_toBottomOf="@+id/txt_begin"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/search"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="190dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/white_background_edittext"
+            android:drawableEnd="@drawable/baseline_search_24"
+            android:ems="10"
+            android:hint="Write Something"
+            android:padding="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/baseline_notifications_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="360dp"
+            android:layout_marginTop="85dp"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="250dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/block1"
+            app:layout_constraintVertical_bias="0.0">
+
+            <TextView
+                android:id="@+id/txt_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="10dp"
+                android:text="Feature Tours"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/pc1"
+                android:layout_width="190dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="55dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/a1"
+                app:cardCornerRadius="50dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:riv_corner_radius="20dp"></com.makeramen.roundedimageview.RoundedImageView>
+
+            <TextView
+                android:layout_width="190dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="165dp"
+                android:drawableEnd="@drawable/baseline_location_on_24"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Phú Quốc, Kiên Giang"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:layout_width="190dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="210dp"
+                android:layout_marginTop="55dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/a2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:riv_corner_radius="20dp" />
+
+            <TextView
+                android:layout_width="190dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="210dp"
+                android:layout_marginTop="165dp"
+                android:drawableEnd="@drawable/baseline_location_on_24"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Hồ Con Rùa, TPHCM"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:layout_width="190dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="215dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/a3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:riv_corner_radius="20dp" />
+
+            <TextView
+                android:layout_width="190dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="325dp"
+                android:drawableEnd="@drawable/baseline_location_on_24"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Hồ Xuân Hương, Đà Lạt"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:layout_width="190dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="210dp"
+                android:layout_marginTop="215dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/a4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:riv_corner_radius="20dp" />
+
+            <TextView
+                android:layout_width="190dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="210dp"
+                android:layout_marginTop="325dp"
+                android:drawableEnd="@drawable/baseline_location_on_24"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Phú Quý, Khánh Hòa"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:layout_width="190dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="375dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/a2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:riv_corner_radius="20dp" />
+
+            <TextView
+                android:layout_width="190dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="485dp"
+                android:drawableEnd="@drawable/baseline_location_on_24"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Bình Bà, Khánh Hòa"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:layout_width="190dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="210dp"
+                android:layout_marginTop="375dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/a1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:riv_corner_radius="20dp" />
+
+            <TextView
+                android:layout_width="190dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="210dp"
+                android:layout_marginTop="485dp"
+                android:drawableEnd="@drawable/baseline_location_on_24"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Mũi Cát, Bình Thuận"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ScrollView>
+
+
+</FrameLayout>
+
+

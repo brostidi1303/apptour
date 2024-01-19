@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.TourFragment"
+    android:background="#c7e5f0">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/txt_tour"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Tour"
+            android:background="#c7e5f0"
+            android:paddingTop="16dp"
+            android:paddingLeft="30dp"
+            android:textSize="25sp"
+            android:textStyle="bold"/>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/pc1"
+                    android:layout_width="190dp"
+                    android:layout_height="150dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="20dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/a1"
+                    app:cardCornerRadius="50dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:riv_corner_radius="20dp">
+
+                </com.makeramen.roundedimageview.RoundedImageView>
+
+                <TextView
+                    android:layout_width="190dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="10dp"
+                    android:text="Phú Quốc, Kiên Giang"
+                    android:drawableEnd="@drawable/baseline_location_on_24"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="130dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:layout_width="190dp"
+                    android:layout_height="150dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="210dp"
+                    android:layout_marginTop="20dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/a2"
+                    app:cardCornerRadius="50dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:riv_corner_radius="20dp">
+
+                </com.makeramen.roundedimageview.RoundedImageView>
+
+                <TextView
+                    android:layout_width="190dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="210dp"
+                    android:text="Mũi Cát, Bình Thuận"
+                    android:drawableEnd="@drawable/baseline_location_on_24"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="130dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:layout_width="190dp"
+                    android:layout_height="150dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="190dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/a3"
+                    app:cardCornerRadius="50dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:riv_corner_radius="20dp">
+
+                </com.makeramen.roundedimageview.RoundedImageView>
+
+                <TextView
+                    android:layout_width="190dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="10dp"
+                    android:text="Hồ Xuân Hương, Đà Lạt"
+                    android:drawableEnd="@drawable/baseline_location_on_24"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="300dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:layout_width="190dp"
+                    android:layout_height="150dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="210dp"
+                    android:layout_marginTop="190dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/a4"
+                    app:cardCornerRadius="50dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:riv_corner_radius="20dp">
+
+                </com.makeramen.roundedimageview.RoundedImageView>
+
+                <TextView
+                    android:layout_width="190dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="210dp"
+                    android:text="Hạ Long Bay, Quảng Ninh"
+                    android:drawableEnd="@drawable/baseline_location_on_24"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="300dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:layout_width="190dp"
+                    android:layout_height="150dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="360dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/a2"
+                    app:cardCornerRadius="50dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:riv_corner_radius="20dp">
+
+                </com.makeramen.roundedimageview.RoundedImageView>
+
+                <TextView
+                    android:layout_width="190dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="10dp"
+                    android:text="Thác Bà, Tây Ninh"
+                    android:drawableEnd="@drawable/baseline_location_on_24"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="470dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:layout_width="190dp"
+                    android:layout_height="150dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="210dp"
+                    android:layout_marginTop="360dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/a3"
+                    app:cardCornerRadius="50dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:riv_corner_radius="20dp">
+
+                </com.makeramen.roundedimageview.RoundedImageView>
+
+                <TextView
+                    android:layout_width="190dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="210dp"
+                    android:text="Mũi Cà Mau"
+                    android:drawableEnd="@drawable/baseline_location_on_24"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="470dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:layout_width="190dp"
+                    android:layout_height="150dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="530dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/a4"
+                    app:cardCornerRadius="50dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:riv_corner_radius="20dp">
+
+                </com.makeramen.roundedimageview.RoundedImageView>
+
+                <TextView
+                    android:layout_width="190dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="10dp"
+                    android:text="Hội An, Quảng Nam"
+                    android:drawableEnd="@drawable/baseline_location_on_24"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="640dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:layout_width="190dp"
+                    android:layout_height="150dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="210dp"
+                    android:layout_marginTop="530dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/a1"
+                    app:cardCornerRadius="50dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:riv_corner_radius="20dp">
+
+                </com.makeramen.roundedimageview.RoundedImageView>
+
+                <TextView
+                    android:layout_width="190dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="210dp"
+                    android:text="Phú Quý, Khánh Hòa"
+                    android:drawableEnd="@drawable/baseline_location_on_24"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="640dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+
+
+
+            </RelativeLayout>
+        </LinearLayout>
+        
+    </LinearLayout>
+
+</FrameLayout>
